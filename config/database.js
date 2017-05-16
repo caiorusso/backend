@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+//mongoose.Promise = global.Promise;
+
 module.exports = mongoose.connect('mongodb://localhost/db_finance') //mongodb://user:password@localhost:port/db_finance
 
 mongoose.Error.messages.general.required = "O atributo '{PATH}' é obrigatório."
